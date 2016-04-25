@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nameofapp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Nameofapp(Berlin Bike Shop!)</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<link href='https://fonts.googleapis.com/css?family=Cabin+Sketch|Lobster' rel='stylesheet' type='text/css'>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<%= csrf_meta_tags %>
 </head>
 <body>
+	
+		<nav class="navbar">
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+	
+	<div class="container">
 
-	<nav>
-		<ul>
-			<li>Home</li>
-			<li>About</li>
-			<li>Contact</li>
-		</ul>
-	</nav>
-
-<%= yield %>
-
-<footer>&copy; 2015 Bike Berlin</footer>
+		<%= yield %>
+	</div><!-- container end -->	
+	<footer>&copy; 2015 Bike Berlin</footer>
 
 </body>
 </html>
