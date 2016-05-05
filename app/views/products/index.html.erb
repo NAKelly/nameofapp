@@ -1,37 +1,27 @@
-<% paragraph_number = 1 %>
-<% 5.times do %>
-  <p>This is paragraph number <%= paragraph_number %></p>
-  <% paragraph_number = paragraph_number + 1 %>
-<% end %>  
-
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Products</h1>
+<h1 style="padding: 1em;">Listing Products</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+<div class="container-fluid">
+  <div class="row">
     <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    
+      <div class="col-sm-2 col-md-4" >
+        <div id="bike">
+        <%= image_tag(product.image_url, class: "img-responsive") %>
+        <h1><%= product.name %></h1>
+        <p><%= product.description %></p>
+        <strong>$ <%= product.price %></strong>
+        <ul class="showeditdestroy">
+          <li><%= link_to 'Show', product %></li>
+          <li><%= link_to 'Edit', edit_product_path(product) %></li>
+          <li><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'} %></li>
+        </ul>
+      </div>
+      </div><!-- /col -->
     <% end %>
-  </tbody>
-</table>
-
-<br>
+  </div>
+</div>
 
 <%= link_to 'New Product', new_product_path %>

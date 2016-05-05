@@ -13,7 +13,10 @@
  *= require_tree .
  *= require_self
  */
-
+@font-face{
+	font-family: 'Softplain';
+	src: url('Softplain.ttf');
+}
 
 nav {
 	background-color: #3498d8;
@@ -53,12 +56,38 @@ footer {
 .my-image {
 margin: 0 auto;
 }
-
+/*Lets Maybe put Softplain here???*/
 h1, h2 {
 	font-family: 'Lobster', cursive;
+	
+	
 }
 .binfo {
 padding: 1em;
-
-
 }
+
+#bike {
+	background-color: #179EE0;
+	border-radius: 2px;
+	padding-top: 1em;
+	margin: 1em;
+	border: #E08F2B 3px solid;
+	text-align: center;
+}
+ #bike img {
+ 	width: 250px;
+ 	height: 220px;
+ 	margin: 0 auto;
+ 	border: #BDA900 1px solid;
+ }
+
+ 
+.showeditdestroy li {
+	display: inline;
+	background-color: #BDA900;
+	padding: 2px;
+	border-radius: 7px;
+	border: 1px solid #0F6894;
+}
+
+
