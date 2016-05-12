@@ -1,6 +1,9 @@
 class OrdersController < ApplicationController
 
+	before_filter :authenticate_user!
+
 	def index
+		
 	end
 
 	def show
@@ -14,5 +17,5 @@ class OrdersController < ApplicationController
 
 	def destroy
 	end
-	
+
 end
