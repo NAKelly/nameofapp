@@ -14,7 +14,25 @@
 	<%= csrf_meta_tags %>
 </head>
 <body>
-	
+
+	<div class="flash-notices">
+		<% if notice %>
+	  
+	  <p id="notice" class=" alert alert-info  alert-dismissable" role="alert">
+	  	<%= notice %>
+	  </p>
+    <% end %>
+
+    <% if alert %>
+    
+    <p id="notice" class="alert warning alert-dismissable" role="alert">
+    	<%= alert %>
+    </p>
+		
+		<% end %>
+	</div>
+
+
 		<nav class="navbar">
 			<ul>
 				<li><%= link_to "Home", static_pages_index_path %></li>
@@ -38,14 +56,15 @@
 			</ul><!-- login/out -->
 		</nav>
 
-		  <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+		  
 	
 	<div class="container">
 
 		<%= yield %>
 	</div><!-- container end -->	
 	<footer>&copy; 2015 Bike Berlin</footer>
+
+	<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
 
 </body>
 </html>
