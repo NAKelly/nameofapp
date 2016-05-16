@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
-WHICH PAGE IS THIS????
-Please tell me!!!
+<h1> <%= @product.name %></h1>
+
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
@@ -14,6 +14,7 @@ Please tell me!!!
 <p>
   <strong>Image url:</strong>
   <%= @product.image_url %>
+ 
 </p>
 <p>
 	<strong>Color:</strong>
@@ -26,3 +27,35 @@ Please tell me!!!
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+
+
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+
+       <%= @product.image_url %>
+      <div class="caption">
+
+        <h3><%= @product.name %></h3>
+        
+        <p><%= @product.description %></p>
+
+        <p>
+          <strong>Color:</strong>
+          <%= @product.color %>
+        </p>
+
+        <p>
+          <strong>Price:</strong>
+          <%= @product.price %>
+        </p>
+        
+        <%= link_to 'Edit', edit_product_path(@product) %> |
+        <%= link_to 'Back', products_path %>
+
+      </div>
+    </div>
+  </div>
+  
+</div>
