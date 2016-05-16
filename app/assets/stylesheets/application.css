@@ -107,3 +107,9 @@ padding: 1em;
 	
 }
 
+.shade {
+
+	background-color: rgba(216, 148, 52, .3);
+	border: 3px #8B5406 solid;
+}
+
