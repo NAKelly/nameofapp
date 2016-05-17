@@ -111,5 +111,13 @@ padding: 1em;
 
 	background-color: rgba(216, 148, 52, .3);
 	border: 3px #8B5406 solid;
+	
+}
+
+.product-reviews {
+margin: 10px;	
+border: 1px solid rgba(87, 189, 255, 0.1);
+padding: 1em;
+
 }
 
