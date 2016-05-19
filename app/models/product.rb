@@ -6,6 +6,8 @@ class Product < ActiveRecord::Base
 		comments.average(:rating).to_f
 	end
 
+	validates :name, presence: true
+	
 
 end
 
