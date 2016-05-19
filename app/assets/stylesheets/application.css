@@ -110,14 +110,8 @@ padding: 1em;
 .shade {
 
 	background-color: rgba(216, 148, 52, .3);
-	border: 3px #8B5406 solid;
+	border: 1px #8B5406 solid;
+	padding: 1em;
 	
-}
-
-.product-reviews {
-margin: 10px;	
-border: 1px solid rgba(87, 189, 255, 0.1);
-padding: 1em;
-
 }
 
