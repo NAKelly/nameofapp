@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
   
   resources :products do 
     resources :comments
   end
 
   resources :users
+
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  
   
   resources :orders, only: [:index, :show, :create, :destroy]
   get 'static_pages/about'
@@ -26,6 +28,8 @@ Rails.application.routes.draw do
 
   #For contact form
   post 'static_pages/thank_you'
+
+  
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
