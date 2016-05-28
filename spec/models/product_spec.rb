@@ -18,7 +18,7 @@ describe Product do
 
 		expect(@product.average_rating).to eq 3
 
-	end
+	end 
 
 	it "expects to be invalid product" do
 		expect(Product.new(description: "Nice bike")).not_to be_valid
