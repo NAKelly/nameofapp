@@ -1,10 +1,13 @@
 require 'rails_helper'
+require 'support/factory_girl'
 
 describe UsersController, :type => :controller do 
 
 	before do 
-		@user = User.create!(email: "peter@example.com", password: "1234567890")
-		@user2 = User.create!(email: "roger@example.com", password: "abcdefghij")
+		
+		@user = FactoryGirl.build(:user)
+		#@user = User.create!(email: "peter@example.com", password: "1234567890")
+		#@user2 = User.create!(email: "roger@example.com", password: "abcdefghij")
 	end
 
 	describe "GET #show" do
