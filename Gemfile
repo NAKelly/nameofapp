@@ -45,6 +45,7 @@ gem 'stripe'
 gem 'angularjs-rails'
 gem 'memcachier'
 gem 'dalli'
+gem 'redis-rails'
 
 
 group :development, :test do
