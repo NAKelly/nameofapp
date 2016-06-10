@@ -15,9 +15,10 @@ def create
 			)
 
 		if charge.paid
-			Order.create(product_id, user_id, total_price)
+			Order.create!(product_id: @product.id, user_id: @user.id, total: @product.price)
 		end
 
+					flash[:success] = "Payment processed successfully"
 	rescue Stripe::CardError => e   		
 		#the card has been declined
 		body = e.json_body
