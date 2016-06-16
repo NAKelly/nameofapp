@@ -30,9 +30,7 @@
       <td> {{order.user.email}}  </td>
       <td>Total</td>
       <td>Product</td>
-      <td>
-         <button ng-click="deleteOrder(order)" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
-      </td>
+      
     </thead>
     <tr ng-repeat="order in orders | orderBy:'-id':reverse">
       <td> {{order.id}} </td>
@@ -44,6 +42,7 @@
         
         <small ng-show="order.user_id">{{order.user_id}}</small>
       </td>
+      <td><button ng-click="deleteOrder(order)" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
     </tr>
   </table>
 </div>
