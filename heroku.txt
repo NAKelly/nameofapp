@@ -1,101 +1,101 @@
-2016-06-14T07:28:05.803063+00:00 app[web.1]:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
-2016-06-14T07:28:05.805121+00:00 app[web.1]:   Rendered products/_comments.html.erb (13.0ms)
-2016-06-14T07:28:05.805504+00:00 app[web.1]:   Rendered products/show.html.erb within layouts/application (26.8ms)
-2016-06-14T07:28:05.808118+00:00 app[web.1]: Completed 200 OK in 34ms (Views: 20.6ms | ActiveRecord: 10.7ms)
-2016-06-14T07:28:05.920532+00:00 heroku[router]: at=info method=GET path="/assets/application-936955407906a3a30ba52b0f253293dd34fc5932b45631ed57abe7967c50705d.css" host=latebloomberlinbikes.herokuapp.com request_id=9d744711-3c2f-46b3-8839-c1cf9a4d6340 fwd="95.91.246.21" dyno=web.1 connect=0ms service=7ms status=304 bytes=133
-2016-06-14T07:28:06.139824+00:00 heroku[router]: at=info method=GET path="/assets/application-9f5b935ed2532abf44c2a07e0a24692f35351d81138531532b1d8c42a283c3bf.js" host=latebloomberlinbikes.herokuapp.com request_id=7dc07192-df2f-4160-b75c-2e1603e453db fwd="95.91.246.21" dyno=web.1 connect=0ms service=4ms status=304 bytes=133
-2016-06-14T07:28:06.394248+00:00 app[web.1]: Started GET "/assets/star-off.png" for 95.91.246.21 at 2016-06-14 07:28:06 +0000
-2016-06-14T07:28:06.586005+00:00 app[web.1]: Started GET "/assets/star-on.png" for 95.91.246.21 at 2016-06-14 07:28:06 +0000
-2016-06-14T07:28:06.572801+00:00 heroku[router]: at=info method=GET path="/assets/star-on.png" host=latebloomberlinbikes.herokuapp.com request_id=c94d725b-6cab-4cce-bd61-524cf761c461 fwd="95.91.246.21" dyno=web.1 connect=0ms service=196ms status=304 bytes=343
-2016-06-14T07:28:06.567198+00:00 heroku[router]: at=info method=GET path="/assets/star-off.png" host=latebloomberlinbikes.herokuapp.com request_id=2c5d1a1a-250e-44de-89b7-354aa6d161e3 fwd="95.91.246.21" dyno=web.1 connect=0ms service=194ms status=304 bytes=343
-2016-06-14T07:28:07.023868+00:00 heroku[router]: at=info method=GET path="/square-image.png" host=latebloomberlinbikes.herokuapp.com request_id=a0d7ce1a-8151-430f-b1d9-53c6c331df26 fwd="95.91.246.21" dyno=web.1 connect=0ms service=8ms status=404 bytes=1829
-2016-06-14T07:28:07.036531+00:00 app[web.1]: Started GET "/square-image.png" for 95.91.246.21 at 2016-06-14 07:28:07 +0000
-2016-06-14T07:28:07.039504+00:00 app[web.1]: 
-2016-06-14T07:28:07.039512+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/square-image.png"):
-2016-06-14T07:28:07.039524+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-2016-06-14T07:28:07.039525+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-2016-06-14T07:28:07.039526+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
-2016-06-14T07:28:07.039527+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
-2016-06-14T07:28:07.039528+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
-2016-06-14T07:28:07.039528+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
-2016-06-14T07:28:07.039529+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
-2016-06-14T07:28:07.039530+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
-2016-06-14T07:28:07.039530+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
-2016-06-14T07:28:07.039531+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
-2016-06-14T07:28:07.039532+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
-2016-06-14T07:28:07.039532+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
-2016-06-14T07:28:07.039535+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
-2016-06-14T07:28:07.039536+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
-2016-06-14T07:28:07.039537+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
-2016-06-14T07:28:07.039538+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
-2016-06-14T07:28:07.039538+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
-2016-06-14T07:28:07.039539+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
-2016-06-14T07:28:07.039540+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
-2016-06-14T07:28:07.039541+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
-2016-06-14T07:28:07.039542+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
-2016-06-14T07:28:07.039542+00:00 app[web.1]: 
-2016-06-14T07:28:07.039543+00:00 app[web.1]: 
-2016-06-14T07:28:07.402083+00:00 app[web.1]: Started GET "/square-image.png" for 54.187.216.72 at 2016-06-14 07:28:07 +0000
-2016-06-14T07:28:07.404851+00:00 app[web.1]: 
-2016-06-14T07:28:07.404865+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/square-image.png"):
-2016-06-14T07:28:07.404867+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-2016-06-14T07:28:07.404868+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-2016-06-14T07:28:07.404869+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
-2016-06-14T07:28:07.404870+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
-2016-06-14T07:28:07.404871+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
-2016-06-14T07:28:07.404871+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
-2016-06-14T07:28:07.404872+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
-2016-06-14T07:28:07.404895+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
-2016-06-14T07:28:07.404896+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
-2016-06-14T07:28:07.404897+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
-2016-06-14T07:28:07.404897+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
-2016-06-14T07:28:07.404898+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
-2016-06-14T07:28:07.404898+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
-2016-06-14T07:28:07.404899+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
-2016-06-14T07:28:07.404899+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
-2016-06-14T07:28:07.404900+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
-2016-06-14T07:28:07.404901+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
-2016-06-14T07:28:07.404901+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
-2016-06-14T07:28:07.404902+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
-2016-06-14T07:28:07.404903+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
-2016-06-14T07:28:07.404903+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
-2016-06-14T07:28:07.404904+00:00 app[web.1]: 
-2016-06-14T07:28:07.404904+00:00 app[web.1]: 
-2016-06-14T07:28:07.388895+00:00 heroku[router]: at=info method=GET path="/square-image.png" host=latebloomberlinbikes.herokuapp.com request_id=b9f369aa-a837-428c-bad5-a51f3863a44b fwd="54.187.216.72" dyno=web.1 connect=0ms service=6ms status=404 bytes=1829
-2016-06-14T07:28:08.942480+00:00 heroku[router]: at=info method=GET path="/square-image.png" host=latebloomberlinbikes.herokuapp.com request_id=38ff5595-c4da-4d64-813f-834b3b1851bf fwd="95.91.246.21" dyno=web.1 connect=0ms service=16ms status=404 bytes=1829
-2016-06-14T07:28:08.952329+00:00 app[web.1]: Started GET "/square-image.png" for 95.91.246.21 at 2016-06-14 07:28:08 +0000
-2016-06-14T07:28:08.958225+00:00 app[web.1]: 
-2016-06-14T07:28:08.958264+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/square-image.png"):
-2016-06-14T07:28:08.958274+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-2016-06-14T07:28:08.958275+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
-2016-06-14T07:28:08.958273+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-2016-06-14T07:28:08.958276+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
-2016-06-14T07:28:08.958276+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
-2016-06-14T07:28:08.958277+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
-2016-06-14T07:28:08.958278+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
-2016-06-14T07:28:08.958279+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
-2016-06-14T07:28:08.958279+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
-2016-06-14T07:28:08.958280+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
-2016-06-14T07:28:08.958281+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
-2016-06-14T07:28:08.958281+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
-2016-06-14T07:28:08.958282+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
-2016-06-14T07:28:08.958298+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
-2016-06-14T07:28:08.958299+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
-2016-06-14T07:28:08.958300+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
-2016-06-14T07:28:08.958300+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
-2016-06-14T07:28:08.958301+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
-2016-06-14T07:28:08.958302+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
-2016-06-14T07:28:08.958303+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
-2016-06-14T07:28:08.958301+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
-2016-06-14T07:28:08.958304+00:00 app[web.1]: 
-2016-06-14T07:28:08.958304+00:00 app[web.1]: 
-2016-06-14T07:28:33.084099+00:00 heroku[router]: at=info method=POST path="/payments/create" host=latebloomberlinbikes.herokuapp.com request_id=0bff16db-63d5-4e23-b299-2cd09df30754 fwd="95.91.246.21" dyno=web.1 connect=2ms service=17ms status=500 bytes=1754
-2016-06-14T07:28:33.089225+00:00 app[web.1]: Started POST "/payments/create" for 95.91.246.21 at 2016-06-14 07:28:33 +0000
-2016-06-14T07:28:33.095789+00:00 app[web.1]: Processing by PaymentsController#create as HTML
-2016-06-14T07:28:33.095828+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"fxqlJv+eGK3f59ChoMdPnml5G1iPfTcFX6ttyoJDkKJ4SZF9X5E2TiRha0PR8Avc2axoc4UPNWLaDSLSR/7WVw==", "product_id"=>"", "stripeToken"=>"tok_18MByMCO1KRqMHTjvEChxb1f", "stripeTokenType"=>"card", "stripeEmail"=>"eiliyas@yahoo.com"}
-2016-06-14T07:28:33.098972+00:00 app[web.1]: Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
-2016-06-14T07:28:33.099876+00:00 app[web.1]: 
-2016-06-14T07:28:33.099885+00:00 app[web.1]: NoMethodError (undefined method `find' for nil:NilClass):
-2016-06-14T07:28:33.099886+00:00 app[web.1]:   app/controllers/payments_controller.rb:6:in `create'
-2016-06-14T07:28:33.099887+00:00 app[web.1]: 
-2016-06-14T07:28:33.099887+00:00 app[web.1]: 
+2016-06-14T07:52:17.981525+00:00 heroku[router]: at=info method=GET path="/assets/star-on.png" host=latebloomberlinbikes.herokuapp.com request_id=c9665999-d651-49c9-ad5d-2ff6c2c95732 fwd="95.91.246.21" dyno=web.1 connect=0ms service=4ms status=304 bytes=343
+2016-06-14T07:52:18.241498+00:00 app[web.1]: Started GET "/square-image.png" for 95.91.246.21 at 2016-06-14 07:52:18 +0000
+2016-06-14T07:52:18.243316+00:00 app[web.1]: 
+2016-06-14T07:52:18.243323+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/square-image.png"):
+2016-06-14T07:52:18.243325+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2016-06-14T07:52:18.243325+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+2016-06-14T07:52:18.243326+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+2016-06-14T07:52:18.243327+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+2016-06-14T07:52:18.243328+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+2016-06-14T07:52:18.243328+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+2016-06-14T07:52:18.243329+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+2016-06-14T07:52:18.243329+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+2016-06-14T07:52:18.243332+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+2016-06-14T07:52:18.243333+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+2016-06-14T07:52:18.243334+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+2016-06-14T07:52:18.243330+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+2016-06-14T07:52:18.243332+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+2016-06-14T07:52:18.243331+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+2016-06-14T07:52:18.243334+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+2016-06-14T07:52:18.243335+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+2016-06-14T07:52:18.243335+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+2016-06-14T07:52:18.243336+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+2016-06-14T07:52:18.243337+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+2016-06-14T07:52:18.243337+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+2016-06-14T07:52:18.243338+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+2016-06-14T07:52:18.243339+00:00 app[web.1]: 
+2016-06-14T07:52:18.243339+00:00 app[web.1]: 
+2016-06-14T07:52:18.242201+00:00 heroku[router]: at=info method=GET path="/square-image.png" host=latebloomberlinbikes.herokuapp.com request_id=47b5ae46-f38a-4ede-a5ce-c8493b260858 fwd="95.91.246.21" dyno=web.1 connect=1ms service=5ms status=404 bytes=1829
+2016-06-14T07:52:18.642439+00:00 heroku[router]: at=info method=GET path="/square-image.png" host=latebloomberlinbikes.herokuapp.com request_id=4eaed036-c65e-4e77-873e-f522f367dccc fwd="54.187.216.72" dyno=web.1 connect=0ms service=4ms status=404 bytes=1829
+2016-06-14T07:52:18.645109+00:00 app[web.1]: Started GET "/square-image.png" for 54.187.216.72 at 2016-06-14 07:52:18 +0000
+2016-06-14T07:52:18.646639+00:00 app[web.1]: 
+2016-06-14T07:52:18.646663+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/square-image.png"):
+2016-06-14T07:52:18.646665+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2016-06-14T07:52:18.646666+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+2016-06-14T07:52:18.646666+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+2016-06-14T07:52:18.646667+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+2016-06-14T07:52:18.646668+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+2016-06-14T07:52:18.646668+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+2016-06-14T07:52:18.646669+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+2016-06-14T07:52:18.646672+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+2016-06-14T07:52:18.646672+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+2016-06-14T07:52:18.646673+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+2016-06-14T07:52:18.646674+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+2016-06-14T07:52:18.646674+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+2016-06-14T07:52:18.646675+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+2016-06-14T07:52:18.646676+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+2016-06-14T07:52:18.646676+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+2016-06-14T07:52:18.646677+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+2016-06-14T07:52:18.646678+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+2016-06-14T07:52:18.646678+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+2016-06-14T07:52:18.646679+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+2016-06-14T07:52:18.646680+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+2016-06-14T07:52:18.646680+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+2016-06-14T07:52:18.646681+00:00 app[web.1]: 
+2016-06-14T07:52:18.646681+00:00 app[web.1]: 
+2016-06-14T07:52:19.864961+00:00 heroku[router]: at=info method=GET path="/products/1" host=latebloomberlinbikes.herokuapp.com request_id=c3a7c587-95fc-411a-a0e4-1fb9bf9590f1 fwd="95.91.246.21" dyno=web.1 connect=0ms service=25ms status=200 bytes=5847
+2016-06-14T07:52:19.983130+00:00 heroku[router]: at=info method=GET path="/assets/application-936955407906a3a30ba52b0f253293dd34fc5932b45631ed57abe7967c50705d.css" host=latebloomberlinbikes.herokuapp.com request_id=fde446fe-d4b5-4209-9e99-440a0500e0ce fwd="95.91.246.21" dyno=web.1 connect=0ms service=3ms status=304 bytes=133
+2016-06-14T07:52:19.844109+00:00 app[web.1]: Started GET "/products/1" for 95.91.246.21 at 2016-06-14 07:52:19 +0000
+2016-06-14T07:52:19.845818+00:00 app[web.1]: Processing by ProductsController#show as HTML
+2016-06-14T07:52:19.845838+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2016-06-14T07:52:19.847403+00:00 app[web.1]:   [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1  [["id", 1]]
+2016-06-14T07:52:19.850181+00:00 app[web.1]: Read fragment views/products/1-20160607130522160911000/eedc998d3ddc31c5a78ccd7ab69cc66c (1.0ms)
+2016-06-14T07:52:19.851374+00:00 app[web.1]: Write fragment views/products/1-20160607130522160911000/eedc998d3ddc31c5a78ccd7ab69cc66c (0.9ms)
+2016-06-14T07:52:19.851735+00:00 app[web.1]:   Rendered shared/_stripe_checkout_button.html.erb (0.1ms)
+2016-06-14T07:52:19.853526+00:00 app[web.1]:   [1m[36m (0.9ms)[0m  [1mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = $1[0m  [["product_id", 1]]
+2016-06-14T07:52:19.855283+00:00 app[web.1]:   [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+2016-06-14T07:52:19.856694+00:00 app[web.1]:   Rendered products/_new_comment.html.erb (2.9ms)
+2016-06-14T07:52:19.858126+00:00 app[web.1]:   [1m[36mComment Load (1.0ms)[0m  [1mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = $1  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m  [["product_id", 1]]
+2016-06-14T07:52:19.859714+00:00 app[web.1]:   [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = $1  [["product_id", 1]]
+2016-06-14T07:52:19.862799+00:00 app[web.1]:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+2016-06-14T07:52:19.861060+00:00 app[web.1]:   [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+2016-06-14T07:52:19.862050+00:00 app[web.1]:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+2016-06-14T07:52:19.863817+00:00 app[web.1]:   Rendered products/_comments.html.erb (7.0ms)
+2016-06-14T07:52:19.864078+00:00 app[web.1]:   Rendered products/show.html.erb within layouts/application (15.4ms)
+2016-06-14T07:52:19.865392+00:00 app[web.1]: Completed 200 OK in 19ms (Views: 12.3ms | ActiveRecord: 5.4ms)
+2016-06-14T07:52:19.990188+00:00 app[web.1]: Started GET "/products/site.js" for 95.91.246.21 at 2016-06-14 07:52:19 +0000
+2016-06-14T07:52:19.992756+00:00 app[web.1]: Processing by ProductsController#show as JS
+2016-06-14T07:52:19.992776+00:00 app[web.1]:   Parameters: {"id"=>"site"}
+2016-06-14T07:52:19.994501+00:00 app[web.1]:   [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1  [["id", 0]]
+2016-06-14T07:52:19.994936+00:00 app[web.1]: Completed 404 Not Found in 2ms (ActiveRecord: 0.9ms)
+2016-06-14T07:52:19.995493+00:00 app[web.1]: 
+2016-06-14T07:52:19.995514+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=site):
+2016-06-14T07:52:19.995515+00:00 app[web.1]:   app/controllers/products_controller.rb:79:in `set_product'
+2016-06-14T07:52:19.995516+00:00 app[web.1]: 
+2016-06-14T07:52:19.995516+00:00 app[web.1]: 
+2016-06-14T07:52:20.026429+00:00 heroku[router]: at=info method=GET path="/assets/application-9f5b935ed2532abf44c2a07e0a24692f35351d81138531532b1d8c42a283c3bf.js" host=latebloomberlinbikes.herokuapp.com request_id=b6edc8cc-e033-46ea-9942-130a9707f970 fwd="95.91.246.21" dyno=web.1 connect=0ms service=8ms status=304 bytes=133
+2016-06-14T07:52:19.992330+00:00 heroku[router]: at=info method=GET path="/products/site.js" host=latebloomberlinbikes.herokuapp.com request_id=b9b0b9ca-7a63-43f1-87a2-6cd20fc8a1a2 fwd="95.91.246.21" dyno=web.1 connect=0ms service=9ms status=404 bytes=1829
+2016-06-14T07:52:20.338842+00:00 heroku[router]: at=info method=GET path="/assets/star-on.png" host=latebloomberlinbikes.herokuapp.com request_id=ebc515c6-4ab1-40c2-a587-dd7b10ee2175 fwd="95.91.246.21" dyno=web.1 connect=0ms service=4ms status=304 bytes=343
+2016-06-14T07:52:20.311183+00:00 heroku[router]: at=info method=GET path="/assets/star-off.png" host=latebloomberlinbikes.herokuapp.com request_id=e147f9a7-d955-4a46-8260-bb97923fa2ca fwd="95.91.246.21" dyno=web.1 connect=9ms service=4ms status=304 bytes=343
+2016-06-14T07:52:20.307037+00:00 app[web.1]: Started GET "/assets/star-on.png" for 95.91.246.21 at 2016-06-14 07:52:20 +0000
+2016-06-14T07:52:20.310924+00:00 app[web.1]: Started GET "/assets/star-off.png" for 95.91.246.21 at 2016-06-14 07:52:20 +0000
+2016-06-14T07:52:55.228105+00:00 heroku[router]: at=info method=POST path="/payments/create" host=latebloomberlinbikes.herokuapp.com request_id=de23fdf0-3275-4137-ab8d-0ec58fc41d0a fwd="95.91.246.21" dyno=web.1 connect=2ms service=20ms status=500 bytes=1754
+2016-06-14T07:52:55.218186+00:00 app[web.1]: Started POST "/payments/create" for 95.91.246.21 at 2016-06-14 07:52:55 +0000
+2016-06-14T07:52:55.223868+00:00 app[web.1]: Processing by PaymentsController#create as HTML
+2016-06-14T07:52:55.228934+00:00 app[web.1]: 
+2016-06-14T07:52:55.228950+00:00 app[web.1]: NoMethodError (undefined method `find' for nil:NilClass):
+2016-06-14T07:52:55.228951+00:00 app[web.1]:   app/controllers/payments_controller.rb:6:in `create'
+2016-06-14T07:52:55.224000+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"ej5PfgUfMJnWPeZY5ryDcliI2kOxyXf29BpWK33blLh9bXslpRAeei27XbqXi8cw6F2paLu7dZFxvBkzuGbSTQ==", "product_id"=>"", "stripeToken"=>"tok_18MCLwCO1KRqMHTjK315uCID", "stripeTokenType"=>"card", "stripeEmail"=>"eiliyas@yahoo.com"}
+2016-06-14T07:52:55.228952+00:00 app[web.1]: 
+2016-06-14T07:52:55.227834+00:00 app[web.1]: Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+2016-06-14T07:52:55.228953+00:00 app[web.1]: 
