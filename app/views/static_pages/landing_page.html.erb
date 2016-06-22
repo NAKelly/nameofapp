@@ -14,7 +14,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
-    <div class="item<%= " active" if product == @products.first %>">
+    <div class="item<%= " active" if product == @products.first %> " class: "img-responsive">
       <%= image_tag(product.image_url) %>
       <div class="carousel-caption">
         <%= product.name %>
@@ -34,11 +34,16 @@
   </a>
 </div>
 
+<h2>Recent Products</h2>
+
 <div class="row">
+
+
     <% @products.each do |product| %>
 
     
       <div class="col-sm-2 col-md-4" >
+
         <% cache product do %>
         <div id="bike">
         <%= image_tag(product.image_url, class: "img-responsive") %>

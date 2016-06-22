@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1 style="padding: 1em;">Listing Products</h1>
+<h1 style="padding: 1em;">Available Products</h1>
 
-
+<div class="newbike"> <%= link_to 'New Product', new_product_path %></div>
 <div class="container-fluid">
 
   <div class="row">
    <% cache (cache_key_for_products) do %>
     <%= render @products %>
    <% end %> 
-
+  <%= link_to 'New Product', new_product_path %>
     
  
     

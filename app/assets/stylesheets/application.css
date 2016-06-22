@@ -42,9 +42,12 @@ nav li {
 }
 
 body { 
-background-color: #ecfof1;
+
+background-color: rgba(255, 246, 167, 0.4);
+/*background-image: url('bike_bg.jpg');*/
 color: #2c3e50;
 font-family: 'Cabin Sketch', cursive;
+
 }
 
 footer {
@@ -68,30 +71,38 @@ padding: 1em;
 
 .navbar {
 	padding: .5em;
+	-webkit-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
 }
 
 #bike {
 	background-color: #179EE0;
 	border-radius: 2px;
 	padding-top: 1em;
-	margin: 1em;
-	border: #E08F2B 3px solid;
+	padding-bottom: .5em;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	/*border: #E08F2B 3px solid;*/
 	text-align: center;
+	-webkit-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
 }
  #bike img {
  	width: 250px;
  	height: 220px;
  	margin: 0 auto;
- 	border: #BDA900 1px solid;
+ 	/*border: #BDA900 1px solid;*/
  }
 
  
 .showeditdestroy li {
 	display: inline;
 	background-color: #BDA900;
-	padding: 2px;
+	padding: 5px;
 	border-radius: 7px;
-	border: 1px solid #0F6894;
+	/*border: 1px solid #0F6894;*/
 }
 
 .login {
@@ -110,8 +121,37 @@ padding: 1em;
 .shade {
 
 	background-color: rgba(216, 148, 52, .3);
-	border: 1px #8B5406 solid;
+	/*border: 1px #8B5406 solid;*/
 	padding: 1em;
 	
 }
+
+.newbike {
+	background-color: green;
+	border-radius: 9px;
+	color: red;
+	width: 55px;
+	height: 50px;
+	text-align: center;
+	float: right;
+
+
+}
+
+.carousel {
+	/*height: 540px;
+	width: 960px;*/
+	-webkit-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+
+
+}
+.carousel img {
+	height: 540px;
+	width: 960px;
+
+
+}
+
 
