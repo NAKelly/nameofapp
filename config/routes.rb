@@ -1,15 +1,16 @@
 Rails.application.routes.draw do
+
+  get 'payments/create'
   
+  devise_for :users#, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  resources :users
   resources :products do 
     resources :comments
   end
-
-  resources :users
-
-  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
   
   
   resources :orders, only: [:index, :show, :create, :destroy]
+  resources :payments
 
   post 'payments/create'
 
