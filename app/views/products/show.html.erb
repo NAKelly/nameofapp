@@ -27,7 +27,7 @@
           <strong>Price:</strong>
           <%= @product.price %> <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
 
-          <%= form_tag "/payments/create" do %>
+          <%= form_tag "/payments" do %>
           <%= render partial: "shared/stripe_checkout_button" %>
           <%= hidden_field_tag(:product_id, @product.id) %>
           <% end %>
