@@ -14,7 +14,7 @@ class ProductsController < ApplicationController
     @products = Product.all
   end 
 
-  respond_with @products
+  
 end
 
   # GET /products/1
