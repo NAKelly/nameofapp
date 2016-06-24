@@ -1,94 +1,3 @@
-2016-06-24T13:03:08.323427+00:00 app[web.1]: Stripe::InvalidRequestError (Invalid integer: 899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899):
-2016-06-24T13:03:08.322536+00:00 app[web.1]: Completed 500 Internal Server Error in 463ms (ActiveRecord: 4.2ms)
-2016-06-24T13:03:08.323442+00:00 app[web.1]: 
-2016-06-24T13:03:08.323442+00:00 app[web.1]: 
-2016-06-24T13:03:08.323418+00:00 app[web.1]: 
-2016-06-24T13:03:08.320348+00:00 heroku[router]: at=info method=POST path="/payments" host=latebloomberlinbikes.herokuapp.com request_id=bf97f9ce-9ed3-4cd4-9cc4-023a09d4bf82 fwd="188.166.162.13" dyno=web.1 connect=1ms service=514ms status=500 bytes=1754
-2016-06-24T13:03:33.262307+00:00 heroku[slug-compiler]: Slug compilation started
-2016-06-24T13:03:33.262316+00:00 heroku[slug-compiler]: Slug compilation finished
-2016-06-24T13:03:33.054652+00:00 heroku[api]: Release v48 created by eiliyasx@gmail.com
-2016-06-24T13:03:33.054556+00:00 heroku[api]: Deploy 5f77eef by eiliyasx@gmail.com
-2016-06-24T13:03:33.315230+00:00 heroku[web.1]: Restarting
-2016-06-24T13:03:33.315785+00:00 heroku[web.1]: State changed from up to starting
-2016-06-24T13:03:36.747900+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 55691 -e production`
-2016-06-24T13:03:36.904213+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2016-06-24T13:03:37.603742+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:80:in `block in server'
-2016-06-24T13:03:37.603723+00:00 app[web.1]: 	/app/vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:177:in `select'
-2016-06-24T13:03:37.603737+00:00 app[web.1]: 	/app/vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:177:in `block in start'
-2016-06-24T13:03:37.603738+00:00 app[web.1]: 	/app/vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:33:in `start'
-2016-06-24T13:03:37.603739+00:00 app[web.1]: 	/app/vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:164:in `start'
-2016-06-24T13:03:37.603740+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
-2016-06-24T13:03:37.603668+00:00 app[web.1]: [2016-06-24 13:03:37] FATAL SignalException: SIGTERM
-2016-06-24T13:03:37.603741+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands/server.rb:80:in `start'
-2016-06-24T13:03:37.603740+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
-2016-06-24T13:03:37.603743+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:75:in `tap'
-2016-06-24T13:03:37.603744+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:75:in `server'
-2016-06-24T13:03:37.603744+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
-2016-06-24T13:03:37.603745+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands.rb:17:in `<top (required)>'
-2016-06-24T13:03:37.603746+00:00 app[web.1]: 	bin/rails:9:in `require'
-2016-06-24T13:03:37.603747+00:00 app[web.1]: 	bin/rails:9:in `<main>'
-2016-06-24T13:03:37.603754+00:00 app[web.1]: [2016-06-24 13:03:37] INFO  going to shutdown ...
-2016-06-24T13:03:37.603804+00:00 app[web.1]: [2016-06-24 13:03:37] INFO  WEBrick::HTTPServer#start done.
-2016-06-24T13:03:37.603875+00:00 app[web.1]: Exiting
-2016-06-24T13:03:38.731145+00:00 heroku[web.1]: Process exited with status 143
-2016-06-24T13:03:42.569255+00:00 app[web.1]: [2016-06-24 13:03:42] INFO  WEBrick::HTTPServer#start: pid=3 port=55691
-2016-06-24T13:03:42.568872+00:00 app[web.1]: [2016-06-24 13:03:42] INFO  ruby 2.3.1 (2016-04-26) [x86_64-linux]
-2016-06-24T13:03:42.568852+00:00 app[web.1]: [2016-06-24 13:03:42] INFO  WEBrick 1.3.1
-2016-06-24T13:03:43.821645+00:00 app[web.1]: => Booting WEBrick
-2016-06-24T13:03:43.821656+00:00 app[web.1]: => Run `rails server -h` for more startup options
-2016-06-24T13:03:43.821655+00:00 app[web.1]: => Rails 4.2.6 application starting in production on http://0.0.0.0:55691
-2016-06-24T13:03:43.821658+00:00 app[web.1]: Started GET "/products/1" for 188.166.162.13 at 2016-06-24 13:03:43 +0000
-2016-06-24T13:03:44.069432+00:00 app[web.1]:   Parameters: {"id"=>"1"}
-2016-06-24T13:03:43.821657+00:00 app[web.1]: => Ctrl-C to shutdown server
-2016-06-24T13:03:44.069419+00:00 app[web.1]: Processing by ProductsController#show as HTML
-2016-06-24T13:03:44.147071+00:00 app[web.1]:   [1m[36mProduct Load (5.6ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 1]]
-2016-06-24T13:03:44.369094+00:00 app[web.1]: Write fragment views/products/1-20160607130522160911000/6f3cc330794deee6036f84a74254ba4e (6.5ms)
-2016-06-24T13:03:44.357052+00:00 app[web.1]:   Cache digest for app/views/products/show.html.erb: 6f3cc330794deee6036f84a74254ba4e
-2016-06-24T13:03:44.392731+00:00 app[web.1]:   [1m[35m (3.5ms)[0m  SELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = $1  [["product_id", 1]]
-2016-06-24T13:03:44.362229+00:00 app[web.1]: Read fragment views/products/1-20160607130522160911000/6f3cc330794deee6036f84a74254ba4e (3.5ms)
-2016-06-24T13:03:44.355578+00:00 app[web.1]:   Cache digest for app/views/shared/_stripe_checkout_button.html.erb: 40fca8f3dbd62739a35524b169f8e876
-2016-06-24T13:03:44.356285+00:00 app[web.1]:   Cache digest for app/views/products/_new_comment.html.erb: 8fd5715505103b5dd09eef62b2ea36ad
-2016-06-24T13:03:44.356891+00:00 app[web.1]:   Cache digest for app/views/products/_comments.html.erb: 7353630a0ec0734f00d753f9d9bc309e
-2016-06-24T13:03:44.374363+00:00 app[web.1]:   Rendered shared/_stripe_checkout_button.html.erb (2.6ms)
-2016-06-24T13:03:43.222540+00:00 heroku[web.1]: State changed from starting to up
-2016-06-24T13:03:44.685320+00:00 app[web.1]:   Rendered products/_new_comment.html.erb (290.7ms)
-2016-06-24T13:03:44.436523+00:00 app[web.1]:   [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
-2016-06-24T13:03:44.703195+00:00 app[web.1]:   [1m[35mComment Load (3.0ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = $1  ORDER BY created_at DESC LIMIT 3 OFFSET 0  [["product_id", 1]]
-2016-06-24T13:03:44.753758+00:00 app[web.1]:   Rendered products/show.html.erb within layouts/application (449.1ms)
-2016-06-24T13:03:44.708149+00:00 app[web.1]:   [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = $1[0m  [["product_id", 1]]
-2016-06-24T13:03:44.746872+00:00 app[web.1]:   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
-2016-06-24T13:03:44.753249+00:00 app[web.1]:   Rendered products/_comments.html.erb (58.7ms)
-2016-06-24T13:03:44.748494+00:00 app[web.1]:   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
-2016-06-24T13:03:44.759295+00:00 app[web.1]: Completed 200 OK in 690ms (Views: 494.1ms | ActiveRecord: 46.7ms)
-2016-06-24T13:03:44.719928+00:00 app[web.1]:   [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
-2016-06-24T13:03:45.617139+00:00 app[web.1]: Completed 404 Not Found in 4ms (ActiveRecord: 1.0ms)
-2016-06-24T13:03:45.613480+00:00 app[web.1]:   Parameters: {"id"=>"site"}
-2016-06-24T13:03:45.616380+00:00 app[web.1]:   [1m[36mProduct Load (1.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 0]]
-2016-06-24T13:03:45.618828+00:00 app[web.1]: 
-2016-06-24T13:03:45.618833+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=site):
-2016-06-24T13:03:45.618835+00:00 app[web.1]:   app/controllers/products_controller.rb:80:in `set_product'
-2016-06-24T13:03:45.618836+00:00 app[web.1]: 
-2016-06-24T13:03:45.613395+00:00 app[web.1]: Processing by ProductsController#show as JS
-2016-06-24T13:03:45.618835+00:00 app[web.1]: 
-2016-06-24T13:03:45.610110+00:00 app[web.1]: Started GET "/products/site.js" for 188.166.162.13 at 2016-06-24 13:03:45 +0000
-2016-06-24T13:03:45.961057+00:00 app[web.1]: 
-2016-06-24T13:03:45.958534+00:00 app[web.1]:   [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1  [["id", 0]]
-2016-06-24T13:03:45.950635+00:00 app[web.1]: Started GET "/products/site.js" for 188.166.162.13 at 2016-06-24 13:03:45 +0000
-2016-06-24T13:03:45.955963+00:00 app[web.1]: Processing by ProductsController#show as JS
-2016-06-24T13:03:45.959678+00:00 app[web.1]: Completed 404 Not Found in 3ms (ActiveRecord: 0.9ms)
-2016-06-24T13:03:45.961072+00:00 app[web.1]:   app/controllers/products_controller.rb:80:in `set_product'
-2016-06-24T13:03:45.961071+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=site):
-2016-06-24T13:03:45.956646+00:00 app[web.1]:   Parameters: {"id"=>"site"}
-2016-06-24T13:03:45.961073+00:00 app[web.1]: 
-2016-06-24T13:03:45.961074+00:00 app[web.1]: 
-2016-06-24T13:03:46.630714+00:00 app[web.1]: Started GET "/assets/star-off.png" for 188.166.162.13 at 2016-06-24 13:03:46 +0000
-2016-06-24T13:03:47.407969+00:00 app[web.1]: Started GET "/assets/star-on.png" for 188.166.162.13 at 2016-06-24 13:03:47 +0000
-2016-06-24T13:03:45.109019+00:00 heroku[router]: at=info method=GET path="/assets/application-513fc47ad25b74f13e46bc0c6d1b0a4dab7064a47b18d153427d548d83391869.css" host=latebloomberlinbikes.herokuapp.com request_id=d4fa05b0-f70a-4b19-ade4-05a6a23fce52 fwd="188.166.162.13" dyno=web.1 connect=0ms service=8ms status=304 bytes=133
-2016-06-24T13:03:44.762190+00:00 heroku[router]: at=info method=GET path="/products/1" host=latebloomberlinbikes.herokuapp.com request_id=83fd0496-e2ad-4f5c-aff3-7915308d16e0 fwd="188.166.162.13" dyno=web.1 connect=0ms service=955ms status=200 bytes=5891
-2016-06-24T13:03:45.619990+00:00 heroku[router]: at=info method=GET path="/products/site.js" host=latebloomberlinbikes.herokuapp.com request_id=523e7359-b6a9-4412-abdf-7cc4996fd577 fwd="188.166.162.13" dyno=web.1 connect=0ms service=25ms status=404 bytes=1829
-2016-06-24T13:03:47.413970+00:00 heroku[router]: at=info method=GET path="/assets/star-on.png" host=latebloomberlinbikes.herokuapp.com request_id=989b2355-1b51-4778-be58-70af505fd570 fwd="188.166.162.13" dyno=web.1 connect=1ms service=794ms status=304 bytes=343
-2016-06-24T13:03:48.102136+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=latebloomberlinbikes.herokuapp.com request_id=4c8f2a64-8430-4869-aba5-bae19b96017d fwd="188.166.162.13" dyno=web.1 connect=1ms service=8ms status=200 bytes=228
-2016-06-24T13:04:10.801097+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"v9KlVCd2ayj1gvnb1fdc/gzdvBoLJIyT2A/Qt6JL6NCVQ3kf4UPKzFruHYhEllo0RfOtrZ5sIAssmuJ/RdiKMA==", "product_id"=>"1", "stripeToken"=>"tok_18PtydCO1KRqMHTjCeYS8sbd", "stripeTokenType"=>"card", "stripeEmail"=>"iam@cousine.me"}
 2016-06-24T13:04:10.794565+00:00 app[web.1]: Started POST "/payments/create" for 188.166.162.13 at 2016-06-24 13:04:10 +0000
 2016-06-24T13:04:10.874795+00:00 app[web.1]: Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
 2016-06-24T13:04:10.888603+00:00 app[web.1]: NameError (undefined local variable or method `byebug' for #<PaymentsController:0x007f7224084d30>):
@@ -99,3 +8,94 @@
 2016-06-24T13:04:10.888594+00:00 app[web.1]: 
 2016-06-24T13:04:10.885419+00:00 heroku[router]: at=info method=POST path="/payments/create" host=latebloomberlinbikes.herokuapp.com request_id=a9e19cd4-f7e5-4fdd-93e9-3fa262ab7999 fwd="188.166.162.13" dyno=web.1 connect=1ms service=115ms status=500 bytes=1754
 2016-06-24T13:04:11.682689+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=latebloomberlinbikes.herokuapp.com request_id=b0723c4a-cd13-4aab-96b4-48157910782e fwd="188.166.162.13" dyno=web.1 connect=0ms service=13ms status=304 bytes=133
+2016-06-24T13:09:00.987020+00:00 heroku[api]: Release v49 created by eiliyasx@gmail.com
+2016-06-24T13:09:00.986967+00:00 heroku[api]: Deploy af88949 by eiliyasx@gmail.com
+2016-06-24T13:09:01.325461+00:00 heroku[web.1]: State changed from up to starting
+2016-06-24T13:09:01.324843+00:00 heroku[web.1]: Restarting
+2016-06-24T13:09:04.743196+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 9719 -e production`
+2016-06-24T13:09:05.349221+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-06-24T13:09:06.316125+00:00 app[web.1]: [2016-06-24 13:09:06] FATAL SignalException: SIGTERM
+2016-06-24T13:09:06.316140+00:00 app[web.1]: 	/app/vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:177:in `select'
+2016-06-24T13:09:06.316144+00:00 app[web.1]: 	/app/vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:177:in `block in start'
+2016-06-24T13:09:06.316145+00:00 app[web.1]: 	/app/vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:33:in `start'
+2016-06-24T13:09:06.316145+00:00 app[web.1]: 	/app/vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:164:in `start'
+2016-06-24T13:09:06.316146+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+2016-06-24T13:09:06.316147+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+2016-06-24T13:09:06.316148+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands/server.rb:80:in `start'
+2016-06-24T13:09:06.316151+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+2016-06-24T13:09:06.316152+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands.rb:17:in `<top (required)>'
+2016-06-24T13:09:06.316149+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+2016-06-24T13:09:06.316150+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:75:in `tap'
+2016-06-24T13:09:06.316150+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/commands/commands_tasks.rb:75:in `server'
+2016-06-24T13:09:06.316153+00:00 app[web.1]: 	bin/rails:9:in `require'
+2016-06-24T13:09:06.316276+00:00 app[web.1]: [2016-06-24 13:09:06] INFO  going to shutdown ...
+2016-06-24T13:09:06.316153+00:00 app[web.1]: 	bin/rails:9:in `<main>'
+2016-06-24T13:09:06.316325+00:00 app[web.1]: [2016-06-24 13:09:06] INFO  WEBrick::HTTPServer#start done.
+2016-06-24T13:09:06.316350+00:00 app[web.1]: Exiting
+2016-06-24T13:09:07.502444+00:00 heroku[web.1]: Process exited with status 143
+2016-06-24T13:09:10.026371+00:00 app[web.1]: [2016-06-24 13:09:10] INFO  WEBrick 1.3.1
+2016-06-24T13:09:10.026776+00:00 app[web.1]: [2016-06-24 13:09:10] INFO  WEBrick::HTTPServer#start: pid=3 port=9719
+2016-06-24T13:09:10.026400+00:00 app[web.1]: [2016-06-24 13:09:10] INFO  ruby 2.3.1 (2016-04-26) [x86_64-linux]
+2016-06-24T13:09:10.156974+00:00 heroku[web.1]: State changed from starting to up
+2016-06-24T13:09:13.365302+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=latebloomberlinbikes.herokuapp.com request_id=0395cc03-0d70-41a3-b8dd-268a924a6346 fwd="188.166.162.13" dyno=web.1 connect=0ms service=5ms status=200 bytes=228
+2016-06-24T13:09:38.867910+00:00 app[web.1]: => Rails 4.2.6 application starting in production on http://0.0.0.0:9719
+2016-06-24T13:09:38.867915+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2016-06-24T13:09:38.867873+00:00 app[web.1]: => Booting WEBrick
+2016-06-24T13:09:39.090598+00:00 app[web.1]: Processing by PaymentsController#create as HTML
+2016-06-24T13:09:39.090687+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"v9KlVCd2ayj1gvnb1fdc/gzdvBoLJIyT2A/Qt6JL6NCVQ3kf4UPKzFruHYhEllo0RfOtrZ5sIAssmuJ/RdiKMA==", "product_id"=>"1", "stripeToken"=>"tok_18Pu3vCO1KRqMHTjZewMoyTj", "stripeTokenType"=>"card", "stripeEmail"=>"iam@cousine.me"}
+2016-06-24T13:09:38.867916+00:00 app[web.1]: => Ctrl-C to shutdown server
+2016-06-24T13:09:38.867917+00:00 app[web.1]: Started POST "/payments/create" for 188.166.162.13 at 2016-06-24 13:09:38 +0000
+2016-06-24T13:09:39.198708+00:00 app[web.1]:   [1m[36mProduct Load (2.4ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1[0m  [["id", 1]]
+2016-06-24T13:09:39.263644+00:00 app[web.1]:   [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+2016-06-24T13:09:39.806923+00:00 app[web.1]: Completed 500 Internal Server Error in 716ms (ActiveRecord: 22.0ms)
+2016-06-24T13:09:39.823569+00:00 app[web.1]: 
+2016-06-24T13:09:39.823567+00:00 app[web.1]: Stripe::InvalidRequestError (Invalid integer: 899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899899):
+2016-06-24T13:09:39.823569+00:00 app[web.1]:   app/controllers/payments_controller.rb:13:in `create'
+2016-06-24T13:09:39.823570+00:00 app[web.1]: 
+2016-06-24T13:09:39.823550+00:00 app[web.1]: 
+2016-06-24T13:09:39.858931+00:00 heroku[router]: at=info method=POST path="/payments/create" host=latebloomberlinbikes.herokuapp.com request_id=eaceb0b6-9d95-4ecc-8668-4c1a621ecd96 fwd="188.166.162.13" dyno=web.1 connect=0ms service=991ms status=500 bytes=1754
+2016-06-24T13:09:40.622232+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=latebloomberlinbikes.herokuapp.com request_id=1dcb085c-ca19-4489-88f3-6118c815fec5 fwd="188.166.162.13" dyno=web.1 connect=1ms service=14ms status=304 bytes=133
+2016-06-24T13:10:41.917072+00:00 app[web.1]:   [1m[36mProduct Load (3.2ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 3[0m
+2016-06-24T13:10:41.919958+00:00 app[web.1]:   Cache digest for app/views/static_pages/landing_page.html.erb: 20ae59e090d4bd7000c82b5c1126fc4c
+2016-06-24T13:10:41.900564+00:00 app[web.1]: Processing by StaticPagesController#landing_page as HTML
+2016-06-24T13:10:41.895308+00:00 app[web.1]: Started GET "/" for 212.93.0.203 at 2016-06-24 13:10:41 +0000
+2016-06-24T13:10:41.928645+00:00 app[web.1]: Write fragment views/products/1-20160607130522160911000/20ae59e090d4bd7000c82b5c1126fc4c (2.3ms)
+2016-06-24T13:10:41.922963+00:00 app[web.1]: Read fragment views/products/1-20160607130522160911000/20ae59e090d4bd7000c82b5c1126fc4c (1.9ms)
+2016-06-24T13:10:41.930876+00:00 app[web.1]: Read fragment views/products/2-20160610103550432449000/20ae59e090d4bd7000c82b5c1126fc4c (1.5ms)
+2016-06-24T13:10:41.933940+00:00 app[web.1]: Write fragment views/products/2-20160610103550432449000/20ae59e090d4bd7000c82b5c1126fc4c (1.7ms)
+2016-06-24T13:10:41.934667+00:00 app[web.1]: Read fragment views/products/3-20160621100254414173000/20ae59e090d4bd7000c82b5c1126fc4c (1.2ms)
+2016-06-24T13:10:41.937381+00:00 app[web.1]: Write fragment views/products/3-20160621100254414173000/20ae59e090d4bd7000c82b5c1126fc4c (1.7ms)
+2016-06-24T13:10:41.946232+00:00 app[web.1]:   [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+2016-06-24T13:10:41.937506+00:00 app[web.1]:   Rendered static_pages/landing_page.html.erb within layouts/application (26.8ms)
+2016-06-24T13:10:41.949622+00:00 app[web.1]: Completed 200 OK in 49ms (Views: 41.9ms | ActiveRecord: 5.8ms)
+2016-06-24T13:10:41.963379+00:00 heroku[router]: at=info method=GET path="/" host=latebloomberlinbikes.herokuapp.com request_id=05065c01-31f6-451c-8dc9-d58030f9a944 fwd="212.93.0.203" dyno=web.1 connect=1ms service=63ms status=200 bytes=6311
+2016-06-24T13:10:42.856391+00:00 heroku[router]: at=info method=GET path="/assets/application-9f5b935ed2532abf44c2a07e0a24692f35351d81138531532b1d8c42a283c3bf.js" host=latebloomberlinbikes.herokuapp.com request_id=443e37f8-941f-4d39-9e46-b73569dd35bd fwd="212.93.0.203" dyno=web.1 connect=1ms service=31ms status=200 bytes=109897
+2016-06-24T13:10:42.825878+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `tagged'
+2016-06-24T13:10:42.826241+00:00 heroku[router]: at=info method=GET path="/site.js" host=latebloomberlinbikes.herokuapp.com request_id=b315b1be-3a39-41f7-915d-efc362d128e2 fwd="212.93.0.203" dyno=web.1 connect=1ms service=23ms status=404 bytes=1829
+2016-06-24T13:10:42.825876+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `block in call'
+2016-06-24T13:10:42.825876+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+2016-06-24T13:10:42.825877+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+2016-06-24T13:10:42.825879+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:20:in `call'
+2016-06-24T13:10:42.825879+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+2016-06-24T13:10:42.825880+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+2016-06-24T13:10:42.825881+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+2016-06-24T13:10:42.825881+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/static.rb:120:in `call'
+2016-06-24T13:10:42.825882+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+2016-06-24T13:10:42.825883+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/engine.rb:518:in `call'
+2016-06-24T13:10:42.825884+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:165:in `call'
+2016-06-24T13:10:42.825874+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+2016-06-24T13:10:42.825887+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+2016-06-24T13:10:42.825888+00:00 app[web.1]: 
+2016-06-24T13:10:42.825888+00:00 app[web.1]: 
+2016-06-24T13:10:42.816900+00:00 app[web.1]: Started GET "/site.js" for 212.93.0.203 at 2016-06-24 13:10:42 +0000
+2016-06-24T13:10:42.825827+00:00 app[web.1]: 
+2016-06-24T13:10:42.825875+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+2016-06-24T13:10:42.825857+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/site.js"):
+2016-06-24T13:10:42.825873+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2016-06-24T13:10:42.825886+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+2016-06-24T13:10:42.811160+00:00 heroku[router]: at=info method=GET path="/assets/application-513fc47ad25b74f13e46bc0c6d1b0a4dab7064a47b18d153427d548d83391869.css" host=latebloomberlinbikes.herokuapp.com request_id=18ed93e0-1a86-421a-9d3e-0b63f43be8b6 fwd="212.93.0.203" dyno=web.1 connect=1ms service=7ms status=200 bytes=1334
+2016-06-24T13:10:42.825884+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+2016-06-24T13:10:42.825885+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+2016-06-24T13:10:42.825885+00:00 app[web.1]:   vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+2016-06-24T13:10:42.825887+00:00 app[web.1]:   vendor/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+2016-06-24T13:10:47.913513+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=latebloomberlinbikes.herokuapp.com request_id=3c8b4546-42c6-4fc5-b5bb-b17ae20127cd fwd="212.93.0.203" dyno=web.1 connect=1ms service=5ms status=200 bytes=228
