@@ -23,7 +23,6 @@ nav {
 	background-size: 100%;
 	font-size: 2em;
 	letter-spacing: 2px;
-
 }
 /*
 .navbar ul li {
@@ -36,18 +35,17 @@ nav ul {
     padding: 0;
     text-align: center;
 }
+
 nav li {
-    display: inline;
-    list-style: none; 
+  display: inline;
+  list-style: none; 
 }
 
 body { 
-
-background-color: rgba(255, 246, 167, 0.4);
-/*background-image: url('bike_bg.jpg');*/
-color: #2c3e50;
-font-family: 'Cabin Sketch', cursive;
-
+	background-color: rgba(255, 246, 167, 0.4);
+	/*background-image: url('bike_bg.jpg');*/
+	color: #2c3e50;
+	font-family: 'Cabin Sketch', cursive;
 }
 
 footer {
@@ -59,12 +57,12 @@ footer {
 .my-image {
 margin: 0 auto;
 }
+
 /*Lets Maybe put Softplain here???*/
 h1, h2 {
 	font-family: 'Lobster', cursive;
-	
-	
 }
+
 .binfo {
 padding: 1em;
 }
@@ -72,8 +70,8 @@ padding: 1em;
 .navbar {
 	padding: .5em;
 	-webkit-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
 }
 
 #bike {
@@ -86,9 +84,10 @@ box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
 	/*border: #E08F2B 3px solid;*/
 	text-align: center;
 	-webkit-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
 }
+ 
  #bike img {
  	width: 250px;
  	height: 220px;
@@ -96,7 +95,6 @@ box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
  	/*border: #BDA900 1px solid;*/
  }
 
- 
 .showeditdestroy li {
 	display: inline;
 	background-color: #BDA900;
@@ -106,7 +104,6 @@ box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
 }
 
 .login {
-
 	background-color: yellow;
 	border-radius: 100px;
 	border: 20px dotted;
@@ -115,15 +112,12 @@ box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
 	width: 250px;
 	margin: 0 auto;
 	margin-bottom: 1em;
-	
 }
 
 .shade {
-
 	background-color: rgba(216, 148, 52, .3);
 	/*border: 1px #8B5406 solid;*/
-	padding: 1em;
-	
+	padding: 1em;	
 }
 
 .newbike {
@@ -134,24 +128,19 @@ box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
 	height: 50px;
 	text-align: center;
 	float: right;
-
-
 }
 
 .carousel {
 	/*height: 540px;
 	width: 960px;*/
 	-webkit-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
-
-
+	-moz-box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 4px 2px 0px rgba(0,0,0,0.75);
 }
+
 .carousel img {
 	height: 540px;
 	width: 960px;
-
-
 }
 
 

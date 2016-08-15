@@ -9,15 +9,13 @@ $(document).on('ready page:load', function() {
 	app.factory('models', ['$resource', function($resource){
     var orders_model = $resource("/orders/:id.json", {id: "@id"});
     var products_model = $resource("/products/:id.json", {id: "@id"});
-	
     var x = {
 		  orders: orders_model,
 		  products: products_model
 	};
 	return x;
 
-}]);
-	
+}]);	
 
 app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models) {
 // Here will be all code belonging to this controller
