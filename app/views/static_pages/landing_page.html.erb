@@ -1,7 +1,4 @@
 <h2>Featured Product:</h2>
-
-
-
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -9,7 +6,6 @@
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
-
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
@@ -19,7 +15,7 @@
       <div class="carousel-caption">
         <%= product.name %>
       </div>
-        </div>
+    </div>
     <% end %>
   </div>
 
@@ -32,31 +28,27 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+</div><!--===== END CAROUSEL =====-->
 
 <h2>Recent Products</h2>
-
 <div class="row">
-
-
-    <% @products.each do |product| %>
-
-    
-      <div class="col-sm-2 col-md-4" >
-
-        <% cache product do %>
-        <div id="bike">
-        <%= image_tag(product.image_url, class: "img-responsive") %>
-        <h1><%= product.name %></h1>
-        <p><%= product.description %></p>
-        <strong>$ <%= product.price %></strong>
+  <% @products.each do |product| %>
+  <div class="col-sm-2 col-md-4" >
+    <% cache product do %>
+    <div id="bike">
+      <%= image_tag(product.image_url, class: "img-responsive") %>
+      <h1><%= product.name %></h1>
+      <p><%= product.description %></p>
+      <strong>$ <%= product.price %></strong>
+        
+        <!--===== SHOW EDIT OR DELETE PRODUCT =====-->
         <ul class="showeditdestroy">
           <li><%= link_to 'Show', product %></li>
           <li><%= link_to 'Edit', edit_product_path(product) %></li>
           <li><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'} %></li>
         </ul>
-      </div>
+    </div><!-- END "bike" -->
       <% end %>
-      </div><!-- /col -->
-    <% end %>
-  </div>
+  </div><!-- /col -->
+  <% end %>
+</div><!-- END "row" -->

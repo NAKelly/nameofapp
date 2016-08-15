@@ -1,3 +1,4 @@
+<!--===== PRODUCT SUBMISSION FORM =====-->
 <%= form_for(@product) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
@@ -11,6 +12,7 @@
     </div>
   <% end %>
 
+  <!--===== INPUT PRODUCT INFORMATION =====-->
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -34,4 +36,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+  <!--===== END INPUT PRODUCT INFORMATION =====-->
 <% end %>
