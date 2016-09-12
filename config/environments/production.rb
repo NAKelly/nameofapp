@@ -23,7 +23,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -51,7 +51,7 @@ Rails.application.configure do
 
   #ActionCable Web Socket Heroku
   config.web_socket_server_url = "wss://nameofapp.herokuapp.com/cable"
-config.action_cable.allowed_request_origins = ['https://nameofapp.herokuapp.com', 'http://nameofapp.herokuapp.com']
+  config.action_cable.allowed_request_origins = ['https://nameofapp.herokuapp.com', 'http://nameofapp.herokuapp.com']
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
