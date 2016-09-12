@@ -35,6 +35,8 @@ Rails.application.routes.draw do
   #For contact form
   post 'static_pages/thank_you'
 
+  mount ActionCable.server => '/cable'
+
   
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

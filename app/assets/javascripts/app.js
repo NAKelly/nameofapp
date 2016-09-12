@@ -2,7 +2,7 @@ var app = angular.module('shop', ['ngResource']);
 
 
 
-$(document).on('ready page:load', function() {
+$(document).on('turbolinks:load', function() {
   angular.bootstrap(document.body, ['shop']);
 });
 

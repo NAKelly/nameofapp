@@ -1,6 +1,6 @@
 <div class="row">
     <% @products.each do |product| %>    
-      <div class="col-sm-2 col-md-4" >
+      <div class="col-sm-12 col-md-4 col-lg-4" >
         <% cache product do %>
         <div id="bike">
         <%= image_tag(product.image_url, class: "img-responsive") %>

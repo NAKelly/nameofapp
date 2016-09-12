@@ -280,7 +280,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   guard
   guard-rspec
-  jbuilder (~> 2.0)
+  jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
   memcachier
