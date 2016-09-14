@@ -90,7 +90,7 @@ padding: 1em;
  
  #bike img {
  	width: 250px;
- 	height: 220px;
+ 	height: auto;
  	margin: 0 auto;
  	/*border: #BDA900 1px solid;*/
  }

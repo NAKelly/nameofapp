@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1> <%= @product.name %></h1>
-<div class="row">
+<div class="row" data-product-id="<%= @product.id %>">
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail shade">
       <% cache @product do %>
