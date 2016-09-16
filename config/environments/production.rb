@@ -50,9 +50,8 @@ Rails.application.configure do
   config.log_tags = [ :request_id ]
 
   #ActionCable Web Socket Heroku
-  config.web_socket_server_url = "wss://nameofapp.herokuapp.com/cable"
-  config.action_cable.allowed_request_origins = ['https://nameofapp.herokuapp.com', 'http://nameofapp.herokuapp.com']
-
+ config.web_socket_server_url = "wss://latebloomberlinbikes.herokuapp.com/cable"
+ config.action_cable.allowed_request_origins = ['https://latebloomberlinbikes.herokuapp.com', 'http://latebloomberlinbikes.herokuapp.com']
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
