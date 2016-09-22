@@ -50,6 +50,7 @@ gem 'angularjs-rails'
 gem 'memcachier'
 gem 'dalli'
 gem 'redis-rails'
+gem 'sidekiq'
 
 
 group :development, :test do
